@@ -5,22 +5,22 @@ import L from "leaflet";
 
 interface ActorMapProps {
   actors: Actor[];
-  selectedActorId: number | null; // Receive the selected actor ID
+  selectedActorId: number | null; 
 }
 
-// Function to assign colors based on actor status
+
 const getColorByStatus = (status: string) => {
     switch (status) {
       case "Idle":
-        return "#4a90e2"; // Light blue for modern feel
+        return "#4a90e2"; 
       case "Working":
-        return "#50e3c2"; // Modern green
+        return "#50e3c2";
       case "Charging":
-        return "#f5a623"; // Orange
+        return "#f5a623";
       case "Unpacking":
-        return "#e94e77"; // Pinkish red
+        return "#e94e77";
       default:
-        return "#9b9b9b"; // Gray for unknown status
+        return "#9b9b9b";
     }
   };
 
@@ -37,7 +37,7 @@ const getColorByStatus = (status: string) => {
           border-radius: 50%; 
           transition: transform 0.3s ease;
         "></div>`,
-      iconAnchor: [10, 10], // Center the icon
+      iconAnchor: [10, 10],
     });
   };
   
@@ -57,7 +57,7 @@ const ActorMap: React.FC<ActorMapProps> = ({ actors, selectedActorId }) => {
         <Marker
           key={actor.id}
           position={[actor.location.lat, actor.location.lng]}
-          icon={createCustomIcon(actor.status, actor.id === selectedActorId)} // Highlight selected actor
+          icon={createCustomIcon(actor.status, actor.id === selectedActorId)} 
         >
           <Popup>
             <strong>{actor.name}</strong> <br />
