@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fleet-dashboard/static/css/main.dcb7468d.css",
+    "main.js": "/fleet-dashboard/static/js/main.8a9c2c2a.js",
+    "static/js/453.65102897.chunk.js": "/fleet-dashboard/static/js/453.65102897.chunk.js",
+    "index.html": "/fleet-dashboard/index.html",
+    "main.dcb7468d.css.map": "/fleet-dashboard/static/css/main.dcb7468d.css.map",
+    "main.8a9c2c2a.js.map": "/fleet-dashboard/static/js/main.8a9c2c2a.js.map",
+    "453.65102897.chunk.js.map": "/fleet-dashboard/static/js/453.65102897.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcb7468d.css",
+    "static/js/main.8a9c2c2a.js"
+  ]
+}
