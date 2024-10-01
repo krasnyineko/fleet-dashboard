@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# Fleet Dashboard (Proof of Concept)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **proof of concept** for a dashboard that allows users to monitor and interact with actors (robots) performing tasks in real-time. It was built in **just an hour** to provide a visual demo, so while it's functional, it's not a full-fledged production application.
 
-## Available Scripts
+![Fleet Dashboard GIF](./screenshots/animation.gif)  <!-- Add your gif -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Description](#description)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the App](#running-the-app)
+- [Deployment](#deployment)
+  - [GitHub Pages](#github-pages)
+  - [Netlify/Vercel](#netlify-vercel)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The **Fleet Dashboard** was created as a **quick visual demo**. It simulates real-time monitoring of actors (robots) moving around a map, performing tasks like "Working", "Charging", etc. This project was thrown together in about an hour to demonstrate the concept, so the UI and code are simple and meant to show the idea visually.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Real-Time Updates**: Actors' locations and statuses update every few seconds (simulated).
+- **Task Management**: Assign tasks to actors directly from the dashboard.
+- **Map Integration**: Visualize actors' locations using Leaflet.js with a minimal setup.
+- **Actor Details Panel**: View detailed information about each actor, including location and task history.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This demo can be run locally by following the instructions below.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js**: Ensure you have Node.js installed. You can download it [here](https://nodejs.org/).
+- **npm**: npm is installed with Node.js, but make sure you have the latest version:
+  ```bash
+  npm install -g npm
+  ```
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/fleet-dashboard.git
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigate to the project directory**:
+   ```bash
+   cd fleet-dashboard
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. **Install the dependencies**:
+   ```bash
+   npm install
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Running the App
 
-## Learn More
+1. **Start the development server**:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Open your browser**:
+   The app will be running at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
+
+- **React**: Frontend JavaScript framework.
+- **Leaflet.js**: For map visualization.
+- **CSS**: For styling.
+- **GitHub Pages**: For deployment.
+## License
+
+This project is licensed under the MIT License
